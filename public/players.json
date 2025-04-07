@@ -1,0 +1,122 @@
+[
+    {
+      "playerId": 1,
+      "name": "Virat Kohli",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/130cd82d-e826-4308-b8b6-d68b3d6be9ef/Virat-Kohli.png",
+      "role": "Batsman - Right-hand bat",
+      "biddingPrice": 558886
+    },
+    {
+      "playerId": 2,
+      "name": "MS Dhoni",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2022/10/17/4e5c97ab-5f3e-4608-82ff-0d1d8c3ed1e0/MS-Dhoni.png",
+      "role": "Wicketkeeper Batsman - Right-hand bat",
+      "biddingPrice": 611227
+    },
+    {
+      "playerId": 3,
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2022/10/17/0be7e3e4-0c02-4e2f-9a20-5c6a443bd6bd/Bumrah.png",
+      "role": "Bowler - Right-arm fast",
+      "biddingPrice": 772268
+    },
+    {
+      "playerId": 4,
+      "name": "Glenn Maxwell",
+      "country": "Australia",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/9f5e57e8-3649-4bd7-bfcd-2e5a2b781bc1/Glenn-Maxwell.png",
+      "role": "All-Rounder - Right-hand bat, Off-spin",
+      "biddingPrice": 630210
+    },
+    {
+      "playerId": 5,
+      "name": "Ben Stokes",
+      "country": "England",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/7cc18eaa-3e7b-47f4-a1c4-5b5de71e3ed8/Ben-Stokes.png",
+      "role": "All-Rounder - Left-hand bat, Right-arm fast-medium",
+      "biddingPrice": 712391
+    },
+    {
+      "playerId": 6,
+      "name": "Ruturaj Gaikwad",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2022/10/17/f43782b5-d307-4c9a-b31f-bb878d8aab2c/Ruturaj-Gaikwad.png",
+      "role": "Batsman - Right-hand bat",
+      "biddingPrice": 669432
+    },
+    {
+      "playerId": 7,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/1d78b4be-f310-4c71-b37b-59053a7683a9/Rashid-Khan.png",
+      "role": "Bowler - Leg-spin",
+      "biddingPrice": 666749
+    },
+    {
+      "playerId": 8,
+      "name": "KL Rahul",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/768518a6-6f03-4b46-9eb1-285df449d3d3/KL-Rahul.png",
+      "role": "Wicketkeeper Batsman - Right-hand bat",
+      "biddingPrice": 751228
+    },
+    {
+      "playerId": 9,
+      "name": "Shubman Gill",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/3f4ebc7b-7765-42c2-9e37-0dc5cf012dfc/Shubman-Gill.png",
+      "role": "Batsman - Right-hand bat",
+      "biddingPrice": 509354
+    },
+    {
+      "playerId": 10,
+      "name": "Hardik Pandya",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2022/10/17/e127f6a6-1146-41ce-a36a-e6f2db1ab6fa/Hardik-Pandya.png",
+      "role": "All-Rounder - Right-hand bat, Right-arm fast-medium",
+      "biddingPrice": 709595
+    },
+    {
+      "playerId": 11,
+      "name": "Andre Russell",
+      "country": "West Indies",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/b404eb48-0027-48ab-9646-53a490d3149f/Andre-Russell.png",
+      "role": "All-Rounder - Right-hand bat, Right-arm fast",
+      "biddingPrice": 455379
+    },
+    {
+      "playerId": 12,
+      "name": "Pat Cummins",
+      "country": "Australia",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/81e2c354-5a20-4767-b2b1-1f625e7ebf4b/Pat-Cummins.png",
+      "role": "Bowler - Right-arm fast",
+      "biddingPrice": 694028
+    },
+    {
+      "playerId": 13,
+      "name": "Rinku Singh",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2022/10/17/1d634f2e-206f-4e63-9859-5065273c8dc6/Rinku-Singh.png",
+      "role": "Batsman - Left-hand bat",
+      "biddingPrice": 616616
+    },
+    {
+      "playerId": 14,
+      "name": "Sam Curran",
+      "country": "England",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/e9d5f0d9-2f44-41b0-bad3-12f69a9d4e4e/Sam-Curran.png",
+      "role": "All-Rounder - Left-hand bat, Left-arm medium-fast",
+      "biddingPrice": 679802
+    },
+    {
+      "playerId": 15,
+      "name": "Suryakumar Yadav",
+      "country": "India",
+      "image": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/10/6f22528a-4be2-4b91-bbaa-c2b7d0ed18bc/Suryakumar-Yadav.png",
+      "role": "Batsman - Right-hand bat",
+      "biddingPrice": 484858
+    }
+  ]
