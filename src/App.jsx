@@ -4,15 +4,19 @@ import logo from './assets/logo.png'
 import logoFooter from './assets/logo-footer.png'
 import bgShadow from './assets/bg-shadow.png'
 import bannerMain from './assets/banner-main.png'
+import Players from './Components/Players/Players'
 
 
 
 function App() {
 
+
   return (
     <>
 
       <div className='max-w-6xl mx-auto'>
+
+        <img src="https://ibb.co.com/LdLX2bdV" alt="" />
 
         <nav className='flex justify-between mt-10'>
 
@@ -46,15 +50,21 @@ function App() {
         {/* main section start */}
 
             <div className='flex justify-between mt-7 items-center'>
-              <div>Available Players</div>
+              <div className='font-bold'>Available Players</div>
               <div className='w-72 h-14'>
                 <button className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold'>Available</button>
                 <button className='w-1/2 h-full bg-[#29e2fe] rounded-r-2xl'>Selected (0) </button>
               </div>
             </div>
 
+        
 
         {/* main section end */}
+        {/* players all */}
+
+        <Players></Players>
+
+        
 
 
       </div >
