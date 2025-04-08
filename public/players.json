@@ -3,120 +3,150 @@
     "playerId": 1,
     "name": "Virat Kohli",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/virat-kohli-253802",
-    "role": "Batsman - Right-hand bat",
-    "biddingPrice": 500000
+    "image": "https://i.ibb.co/7d08nsbr/Virat-Kohli.jpg",
+    "role": "Batsman",
+    "biddingPrice": 950000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm medium"
   },
   {
     "playerId": 2,
     "name": "MS Dhoni",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/ms-dhoni-28081",
-    "role": "Wicketkeeper Batsman - Right-hand bat",
-    "biddingPrice": 600000
+    "image": "https://i.ibb.co/fdHWzzFM/MS-Dhoni.jpg",
+    "role": "Wicketkeeper",
+    "biddingPrice": 920000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm medium"
   },
   {
     "playerId": 3,
     "name": "Jasprit Bumrah",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/jasprit-bumrah-625383",
-    "role": "Bowler - Right-arm fast",
-    "biddingPrice": 550000
+    "image": "https://i.ibb.co/XZrnFmHN/Jashprit-bhomra.jpg",
+    "role": "Bowler",
+    "biddingPrice": 880000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm fast"
   },
   {
     "playerId": 4,
     "name": "Glenn Maxwell",
     "country": "Australia",
-    "image": "https://www.espncricinfo.com/player/glenn-maxwell-325026",
-    "role": "All-Rounder - Right-hand bat, Off-spin",
-    "biddingPrice": 700000
+    "image": "https://i.ibb.co/q35dfvfd/Glenn-Maxwell.png",
+    "role": "All-Rounder",
+    "biddingPrice": 910000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm off-break"
   },
   {
     "playerId": 5,
     "name": "Ben Stokes",
     "country": "England",
-    "image": "https://www.espncricinfo.com/player/ben-stokes-311158",
-    "role": "All-Rounder - Left-hand bat, Right-arm fast-medium",
-    "biddingPrice": 750000
+    "image": "https://i.ibb.co/3YPNPbT9/Ben-Stokes.jpg",
+    "role": "All-Rounder",
+    "biddingPrice": 890000,
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Right-arm fast-medium"
   },
   {
     "playerId": 6,
     "name": "Ruturaj Gaikwad",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/ruturaj-gaikwad-1060380",
-    "role": "Batsman - Right-hand bat",
-    "biddingPrice": 480000
+    "image": "https://i.ibb.co/Fk4XsStQ/Ruturaj-Gaikwad.jpg",
+    "role": "Batsman",
+    "biddingPrice": 650000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm off-break"
   },
   {
     "playerId": 7,
     "name": "Rashid Khan",
     "country": "Afghanistan",
-    "image": "https://www.espncricinfo.com/player/rashid-khan-793463",
-    "role": "Bowler - Leg-spin",
-    "biddingPrice": 720000
+    "image": "https://i.ibb.co/B2LSsFnM/Rashid-Khan.jpg",
+    "role": "Bowler",
+    "biddingPrice": 800000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm leg spin"
   },
   {
     "playerId": 8,
     "name": "KL Rahul",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/kl-rahul-422108",
-    "role": "Wicketkeeper Batsman - Right-hand bat",
-    "biddingPrice": 680000
+    "image": "https://i.ibb.co/mCNPjMTC/KL-Rahul.webp",
+    "role": "Batsman",
+    "biddingPrice": 870000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm medium"
   },
   {
     "playerId": 9,
     "name": "Shubman Gill",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/shubman-gill-1070173",
-    "role": "Batsman - Right-hand bat",
-    "biddingPrice": 490000
+    "image": "https://i.ibb.co/rR9JHs5P/Shubman-Gill.png",
+    "role": "Batsman",
+    "biddingPrice": 700000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm off-break"
   },
   {
     "playerId": 10,
     "name": "Hardik Pandya",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/hardik-pandya-625371",
-    "role": "All-Rounder - Right-hand bat, Right-arm fast-medium",
-    "biddingPrice": 710000
+    "image": "https://i.ibb.co/cmp9L65/Hardik-Pandya.jpg",
+    "role": "All-Rounder",
+    "biddingPrice": 920000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm fast-medium"
   },
   {
     "playerId": 11,
     "name": "Andre Russell",
     "country": "West Indies",
-    "image": "https://www.espncricinfo.com/player/andre-russell-276298",
-    "role": "All-Rounder - Right-hand bat, Right-arm fast",
-    "biddingPrice": 730000
+    "image": "https://i.ibb.co/MkzjqdMh/Andre-Russell.jpg",
+    "role": "All-Rounder",
+    "biddingPrice": 880000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm fast"
   },
   {
     "playerId": 12,
     "name": "Pat Cummins",
     "country": "Australia",
-    "image": "https://www.espncricinfo.com/player/pat-cummins-489889",
-    "role": "Bowler - Right-arm fast",
-    "biddingPrice": 760000
+    "image": "https://i.ibb.co/nq1DQTtL/Pat-Cummins.jpg",
+    "role": "Bowler",
+    "biddingPrice": 970000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm fast"
   },
   {
     "playerId": 13,
     "name": "Rinku Singh",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/rinku-singh-1079434",
-    "role": "Batsman - Left-hand bat",
-    "biddingPrice": 460000
+    "image": "https://i.ibb.co/jkcP1Bkn/11102.webp",
+    "role": "Batsman",
+    "biddingPrice": 600000,
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Right-arm off-break"
   },
   {
     "playerId": 14,
     "name": "Sam Curran",
     "country": "England",
-    "image": "https://www.espncricinfo.com/player/sam-curran-662973",
-    "role": "All-Rounder - Left-hand bat, Left-arm medium-fast",
-    "biddingPrice": 740000
+    "image": "https://i.ibb.co/gFLYhkPZ/Sam-Curran.webp",
+    "role": "All-Rounder",
+    "biddingPrice": 990000,
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Left-arm medium-fast"
   },
   {
     "playerId": 15,
     "name": "Suryakumar Yadav",
     "country": "India",
-    "image": "https://www.espncricinfo.com/player/suryakumar-yadav-446507",
-    "role": "Batsman - Right-hand bat",
-    "biddingPrice": 670000
+    "image": "https://i.ibb.co/20ZdfBKK/Suryakumar-Yadav.jpg",
+    "role": "Batsman",
+    "biddingPrice": 750000,
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm medium"
   }
 ]

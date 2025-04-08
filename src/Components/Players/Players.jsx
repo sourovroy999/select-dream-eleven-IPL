@@ -12,12 +12,12 @@ const Players = () => {
     },[])
 
     return (
-        <div>
-            <h1>All players length:{players.length}</h1>
+        <div className='grid grid-cols-3 gap-5 mt-8'>
+            {/* <h1>All players length:{players.length}</h1> */}
             {
                 players.map(pPlayer=>
                     <Player key={pPlayer.playerId} playerInside={pPlayer}>
-                        
+
                     </Player>
                 )
                 
