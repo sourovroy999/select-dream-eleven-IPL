@@ -42,7 +42,7 @@ function App() {
 
           <div className='content-center mx-auto border-[#E7FE29] border  w-[225px] h-16 rounded-3xl'>
 
-            <button className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold '>Claim Your Free Credit</button>
+            <button className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold btn '>Claim Free Credit</button>
           </div>
         </div>
         {/* hero section end */}
@@ -52,8 +52,8 @@ function App() {
             <div className='flex justify-between mt-7 items-center'>
               <div className='font-bold'>Available Players</div>
               <div className='w-72 h-14'>
-                <button className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold'>Available</button>
-                <button className='w-1/2 h-full bg-[#29e2fe] rounded-r-2xl'>Selected (0) </button>
+                <button className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold border border-gray-200'>Available</button>
+                <button className='w-1/2 h-full  rounded-r-2xl border border-gray-200'>Selected (0) </button>
               </div>
             </div>
 
@@ -68,6 +68,9 @@ function App() {
 
 
       </div >
+
+
+
     </>
   )
 }

@@ -47,7 +47,7 @@
     "role": "All-Rounder",
     "biddingPrice": 890000,
     "battingStyle": "Left-handed",
-    "bowlingStyle": "Right-arm fast-medium"
+    "bowlingStyle": "Right-arm fastmedium"
   },
   {
     "playerId": 6,
@@ -97,7 +97,7 @@
     "role": "All-Rounder",
     "biddingPrice": 920000,
     "battingStyle": "Right-handed",
-    "bowlingStyle": "Right-arm fast-medium"
+    "bowlingStyle": "Right-arm fastmedium"
   },
   {
     "playerId": 11,

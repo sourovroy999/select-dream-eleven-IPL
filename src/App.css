@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
 .bgImage{
     background-image:url(./assets/bg-shadow.png);
     background-size: cover;
