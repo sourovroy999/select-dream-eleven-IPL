@@ -41,7 +41,7 @@ const Player = ({playerInside}) => {
                 <div className='inline-block'>{bowlingStyle}</div>
                 <div className='font-bold'>Price: ${biddingPrice}</div>
                 <div>
-                    <button className='btn  '>Choose Player</button>
+                    <button className='btn hover:bg-blue-500 '>Choose Player</button>
                 </div>
             </div>
    

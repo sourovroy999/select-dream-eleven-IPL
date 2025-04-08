@@ -10,6 +10,15 @@ import Players from './Components/Players/Players'
 
 function App() {
 
+  const[credit, setCredit]=useState(0)
+  function handleCredit (){
+    const newCredit=credit+450000;
+    setCredit(newCredit)
+    
+    
+  }
+  
+
 
   return (
     <>
@@ -28,7 +37,7 @@ function App() {
             <a href="">Fixture</a>
             <a href="">Teams</a>
             <a href="">Schedule</a>
-            <button className='border rounded-[10px] w-[125px] h-[52px] flex gap-3 justify-center items-center text-center'><p className='bold '>0 Coin</p> <img className='w-7 h-7' src="https://img.icons8.com/?size=100&id=sPBQkuep9vDA&format=png&color=000000" alt="" /></button>
+            <button className='border rounded-[10px] px-2 h-[52px] flex gap-3 justify-center items-center text-center'><p className='bold '><span>{credit}</span> Coin</p> <img className='w-7 h-7' src="https://img.icons8.com/?size=100&id=sPBQkuep9vDA&format=png&color=000000" alt="" /></button>
           </div>
 
         </nav>
@@ -42,7 +51,7 @@ function App() {
 
           <div className='content-center mx-auto border-[#E7FE29] border  w-[225px] h-16 rounded-3xl'>
 
-            <button className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold btn '>Claim Free Credit</button>
+            <button onClick={handleCredit}  className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold btn '>Claim Free Credit</button>
           </div>
         </div>
         {/* hero section end */}
