@@ -28,7 +28,7 @@ function App() {
     document.getElementById('selected-btn').classList.add('bg-[#E7FE29]');
     document.getElementById('available-btn').classList.remove('bg-[#E7FE29]');
     document.getElementById('players-count').innerHTML=`
-            <h1>Selected Players (<span>0</span>/11)</h1>
+            <h1>Selected Players (<span>{}</span>/11)</h1>
     `
 
 
@@ -42,9 +42,19 @@ function App() {
   }
 
   const clickToAddPlayer=(p)=>{
-    const newPlayer=[...selectedPlayer, p]
-    setSelectedPlayer(newPlayer)
-      }
+
+    const isExist=selectedPlayer.find(item=> item.playerId == p.playerId)
+ 
+    if(!isExist){
+      const newPlayer=[...selectedPlayer, p]
+      setSelectedPlayer(newPlayer)
+        }
+    
+    else{
+      alert('already selected')
+    }
+  }
+    
 
       console.log(selectedPlayer);
 
@@ -96,7 +106,7 @@ function App() {
               <div id='players-count' className='font-bold'>Available Players</div>
               <div className='w-72 h-14'>
                 <button onClick={handleShowPlayerBtn} id='available-btn' className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold border border-gray-200'>Available</button>
-                <button id='selected-btn' onClick={handleHiddenPlayer}  className='w-1/2 h-full  rounded-r-2xl border border-gray-200'>Selected (0) </button>
+                <button id='selected-btn' onClick={handleHiddenPlayer}  className='w-1/2 h-full  rounded-r-2xl border border-gray-200'>Selected (<span>{selectedPlayer.length}</span>) </button>
               </div>
             </div>
 
