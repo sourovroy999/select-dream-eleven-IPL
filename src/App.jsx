@@ -28,7 +28,7 @@ function App() {
     document.getElementById('selected-btn').classList.add('bg-[#E7FE29]');
     document.getElementById('available-btn').classList.remove('bg-[#E7FE29]');
     document.getElementById('players-count').innerHTML=`
-            <h1>Selected Players (<span>{}</span>/11)</h1>
+            <h1>Selected Players (<span>${selectedPlayer.length}</span>/11)</h1>
     `
 
 
