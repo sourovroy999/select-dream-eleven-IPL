@@ -6,7 +6,7 @@ import { IoMdPerson } from 'react-icons/io';
 const Player = ({playerInside, clickToAddPlayer}) => {
     // console.log(playerInside);
 
-    const{image, name, country, role, biddingPrice,bowlingStyle,battingStyle}=playerInside;
+    const{image, name, country, role, biddingPrice,bowlingStyle,battingStyle, playerId}=playerInside;
 
     
     
@@ -39,7 +39,7 @@ const Player = ({playerInside, clickToAddPlayer}) => {
                 <div className='inline-block'>{bowlingStyle}</div>
                 <div className='font-bold'>Price: ${biddingPrice}</div>
                 <div>
-                    <button onClick={()=>clickToAddPlayer(playerInside)}className='btn hover:bg-blue-500 '>Choose Player</button>
+                    <button id='${playerId}' onClick={()=>clickToAddPlayer(playerInside)}className='btn hover:bg-blue-500 '>Choose Player</button>
                 </div>
             </div>
    

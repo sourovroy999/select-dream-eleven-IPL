@@ -27,9 +27,7 @@ function App() {
     setShow(false)
     document.getElementById('selected-btn').classList.add('bg-[#E7FE29]');
     document.getElementById('available-btn').classList.remove('bg-[#E7FE29]');
-    document.getElementById('players-count').innerHTML=`
-            <h1>Selected Players (<span>${selectedPlayer.length}</span>/11)</h1>
-    `
+    document.getElementById('players-count').innerText=''
 
 
   }
@@ -44,16 +42,56 @@ function App() {
   const clickToAddPlayer=(p)=>{
 
     const isExist=selectedPlayer.find(item=> item.playerId == p.playerId)
- 
-    if(!isExist){
-      const newPlayer=[...selectedPlayer, p]
-      setSelectedPlayer(newPlayer)
-        }
+
+    console.log(p.playerId);
     
-    else{
-      alert('already selected')
+
+
+  //  if(!isExist ){
+  //     const newPlayer=[...selectedPlayer, p]
+  //     setSelectedPlayer(newPlayer)  
+  //   }
+
+  //       else {
+  //       alert('already selected')
+
+  //       }
+
+  
+
+  //  if( p.biddingPrice<credit ){
+  //     const newPlayer2=[...selectedPlayer, p]
+  //     setSelectedPlayer(newPlayer2) 
+      
+  //     // const newCredit=setCredit-p.biddingPrice;
+  //     setCredit(credit-p.biddingPrice)
+  //   }
+
+  //       else {
+  //       alert('you dont have money')
+
+  //       }
+   if( selectedPlayer.length<6 ){
+      const newPlayer2=[...selectedPlayer, p]
+      setSelectedPlayer(newPlayer2) 
+      
     }
+
+        else {
+        alert('players exceeds six')
+
+        }
+        
+   
+        
+    
   }
+
+  const checkBalance=()=>{
+
+  }
+
+
 
   const handleDelete =(id)=>{
       const newPlayer=selectedPlayer.filter(item => item.playerId !== id)
