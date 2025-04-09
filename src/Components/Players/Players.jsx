@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Player from '../Player/Player';
 
-const Players = () => {
+const Players = ({handlePlayer}) => {
     const[players, setPlayers]= useState([])
 
     useEffect(()=>{
@@ -11,12 +11,14 @@ const Players = () => {
         )
     },[])
 
+    
+
     return (
-        <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-5 mt-8'>
+        <div id='players-section' className='grid  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-5 mt-8'>
             {/* <h1>All players length:{players.length}</h1> */}
             {
                 players.map(pPlayer=>
-                    <Player key={pPlayer.playerId} playerInside={pPlayer}>
+                    <Player handlePlayer={handlePlayer}  key={pPlayer.playerId} playerInside={pPlayer}>
 
                     </Player>
                 )

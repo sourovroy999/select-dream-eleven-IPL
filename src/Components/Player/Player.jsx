@@ -3,13 +3,11 @@ import { FaFlag} from 'react-icons/fa';
 import { GrFlagFill } from 'react-icons/gr';
 import { IoMdPerson } from 'react-icons/io';
 
-const Player = ({playerInside}) => {
+const Player = ({playerInside, handlePlayer}) => {
     console.log(playerInside);
 
     const{image, name, country, role, biddingPrice,bowlingStyle,battingStyle}=playerInside;
 
-    console.log(name);
-    console.log(image);
     
     
     
@@ -41,7 +39,7 @@ const Player = ({playerInside}) => {
                 <div className='inline-block'>{bowlingStyle}</div>
                 <div className='font-bold'>Price: ${biddingPrice}</div>
                 <div>
-                    <button className='btn hover:bg-blue-500 '>Choose Player</button>
+                    <button onClick={()=>handlePlayer(playerInside)}className='btn hover:bg-blue-500 '>Choose Player</button>
                 </div>
             </div>
    

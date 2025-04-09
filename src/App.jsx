@@ -5,24 +5,44 @@ import logoFooter from './assets/logo-footer.png'
 import bgShadow from './assets/bg-shadow.png'
 import bannerMain from './assets/banner-main.png'
 import Players from './Components/Players/Players'
+import ChoosePlayer from './Components/ChoosePlayer/ChoosePlayer'
 
 
 
 function App() {
 
   const[credit, setCredit]=useState(0)
+  const[show, setShow]= useState(true)
+
   function handleCredit (){
     const newCredit=credit+450000;
     setCredit(newCredit)
     
     
   }
+
+  const handleHiddenPlayer=()=>{
+    setShow(false)
+    document.getElementById('selected-btn').classList.add('bg-[#E7FE29]');
+    document.getElementById('available-btn').classList.remove('bg-[#E7FE29]');
+
+
+  }
+  const handleShowPlayerBtn =()=>{
+    setShow(true)
+    document.getElementById('selected-btn').classList.remove('bg-[#E7FE29]');
+    document.getElementById('available-btn').classList.add('bg-[#E7FE29]');
+  }
+
+  const handlePlayer=(p)=>{
+    console.log(p);
+    
+      }
   
 
 
   return (
     <>
-
       <div className='max-w-6xl mx-auto'>
 
         <img src="https://ibb.co.com/LdLX2bdV" alt="" />
@@ -61,8 +81,8 @@ function App() {
             <div className='flex justify-between mt-7 items-center'>
               <div className='font-bold'>Available Players</div>
               <div className='w-72 h-14'>
-                <button className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold border border-gray-200'>Available</button>
-                <button className='w-1/2 h-full  rounded-r-2xl border border-gray-200'>Selected (0) </button>
+                <button onClick={handleShowPlayerBtn} id='available-btn' className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold border border-gray-200'>Available</button>
+                <button id='selected-btn' onClick={handleHiddenPlayer}  className='w-1/2 h-full  rounded-r-2xl border border-gray-200'>Selected (0) </button>
               </div>
             </div>
 
@@ -70,8 +90,10 @@ function App() {
 
         {/* main section end */}
         {/* players all */}
-
-        <Players></Players>
+    {
+      show?  <Players handlePlayer={handlePlayer}></Players> : <ChoosePlayer></ChoosePlayer>
+    }
+       
 
         
 
