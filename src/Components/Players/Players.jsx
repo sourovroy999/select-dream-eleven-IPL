@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Player from '../Player/Player';
 
-const Players = ({handlePlayer}) => {
+const Players = ({clickToAddPlayer }) => {
     const[players, setPlayers]= useState([])
 
     useEffect(()=>{
@@ -18,7 +18,7 @@ const Players = ({handlePlayer}) => {
             {/* <h1>All players length:{players.length}</h1> */}
             {
                 players.map(pPlayer=>
-                    <Player handlePlayer={handlePlayer}  key={pPlayer.playerId} playerInside={pPlayer}>
+                    <Player clickToAddPlayer={clickToAddPlayer}  key={pPlayer.playerId} playerInside={pPlayer}>
 
                     </Player>
                 )

@@ -14,6 +14,8 @@ function App() {
   const[credit, setCredit]=useState(0)
   const[show, setShow]= useState(true)
 
+  const[selectedPlayer, setSelectedPlayer]=useState([])
+
   function handleCredit (){
     const newCredit=credit+450000;
     setCredit(newCredit)
@@ -25,6 +27,9 @@ function App() {
     setShow(false)
     document.getElementById('selected-btn').classList.add('bg-[#E7FE29]');
     document.getElementById('available-btn').classList.remove('bg-[#E7FE29]');
+    document.getElementById('players-count').innerHTML=`
+            <h1>Selected Players (<span>0</span>/11)</h1>
+    `
 
 
   }
@@ -32,12 +37,21 @@ function App() {
     setShow(true)
     document.getElementById('selected-btn').classList.remove('bg-[#E7FE29]');
     document.getElementById('available-btn').classList.add('bg-[#E7FE29]');
+    document.getElementById('players-count').innerText='Available Players'
+
   }
 
-  const handlePlayer=(p)=>{
-    console.log(p);
-    
+  const clickToAddPlayer=(p)=>{
+    const newPlayer=[...selectedPlayer, p]
+    setSelectedPlayer(newPlayer)
       }
+
+      console.log(selectedPlayer);
+
+      const{name}= selectedPlayer;
+      console.log(name);
+      
+      
   
 
 
@@ -79,7 +93,7 @@ function App() {
         {/* main section start */}
 
             <div className='flex justify-between mt-7 items-center'>
-              <div className='font-bold'>Available Players</div>
+              <div id='players-count' className='font-bold'>Available Players</div>
               <div className='w-72 h-14'>
                 <button onClick={handleShowPlayerBtn} id='available-btn' className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold border border-gray-200'>Available</button>
                 <button id='selected-btn' onClick={handleHiddenPlayer}  className='w-1/2 h-full  rounded-r-2xl border border-gray-200'>Selected (0) </button>
@@ -91,7 +105,7 @@ function App() {
         {/* main section end */}
         {/* players all */}
     {
-      show?  <Players handlePlayer={handlePlayer}></Players> : <ChoosePlayer></ChoosePlayer>
+      show?  <Players clickToAddPlayer={clickToAddPlayer}></Players> : <ChoosePlayer selectedPlayer={selectedPlayer}></ChoosePlayer>
     }
        
 

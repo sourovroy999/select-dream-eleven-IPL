@@ -1,9 +1,17 @@
 import React from 'react';
+import SingleChoosePlayer from '../SingleChoosePlayer/SingleChoosePlayer';
 
-const ChoosePlayer = () => {
+const ChoosePlayer = ({selectedPlayer}) => {
+   
+   
+    
+    
     return (
-        <div>
-            <h1>hello to selected section</h1>
+        <div className='space-y-3 mt-5'>
+
+            {
+                selectedPlayer.map(pPlayer=><SingleChoosePlayer selectedPlayer={pPlayer}></SingleChoosePlayer>)
+            }
         </div>
     );
 };
