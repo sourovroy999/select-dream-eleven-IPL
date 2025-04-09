@@ -54,6 +54,12 @@ function App() {
       alert('already selected')
     }
   }
+
+  const handleDelete =(id)=>{
+      const newPlayer=selectedPlayer.filter(item => item.playerId !== id)
+      setSelectedPlayer(newPlayer)
+      
+  }
     
 
       console.log(selectedPlayer);
@@ -115,7 +121,7 @@ function App() {
         {/* main section end */}
         {/* players all */}
     {
-      show?  <Players clickToAddPlayer={clickToAddPlayer}></Players> : <ChoosePlayer selectedPlayer={selectedPlayer}></ChoosePlayer>
+      show?  <Players clickToAddPlayer={clickToAddPlayer}></Players> : <ChoosePlayer handleDelete={handleDelete} selectedPlayer={selectedPlayer}></ChoosePlayer>
     }
        
 

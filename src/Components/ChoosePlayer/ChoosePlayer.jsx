@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleChoosePlayer from '../SingleChoosePlayer/SingleChoosePlayer';
 
-const ChoosePlayer = ({selectedPlayer}) => {
+const ChoosePlayer = ({selectedPlayer, handleDelete}) => {
    
    
     
@@ -10,7 +10,7 @@ const ChoosePlayer = ({selectedPlayer}) => {
         <div className='space-y-3 mt-5'>
 
             {
-                selectedPlayer.map(pPlayer=><SingleChoosePlayer selectedPlayer={pPlayer}></SingleChoosePlayer>)
+                selectedPlayer.map(pPlayer=><SingleChoosePlayer handleDelete={handleDelete} selectedPlayer={pPlayer}></SingleChoosePlayer>)
             }
         </div>
     );

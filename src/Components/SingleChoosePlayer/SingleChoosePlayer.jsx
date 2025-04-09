@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleChoosePlayer = ({selectedPlayer}) => {
+const SingleChoosePlayer = ({selectedPlayer,handleDelete}) => {
     const{image,name, role, playerId}=selectedPlayer;
     console.log(name);
     
@@ -14,7 +14,7 @@ const SingleChoosePlayer = ({selectedPlayer}) => {
                         <p className='text-gray-400'>{role}</p>
                     </div>
                 </div>
-                <button><img className='h-10' src="https://img.icons8.com/?size=100&id=119057&format=png&color=000000" alt="" /></button>
+                <button onClick={()=>handleDelete(playerId)}><img className='h-10' src="https://img.icons8.com/?size=100&id=119057&format=png&color=000000" alt="" /></button>
             </div>
         </div>
     );
