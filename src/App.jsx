@@ -139,7 +139,7 @@ function App() {
 
   return (
     <>
-      <div className='md:px-8  mx-auto max-w-7xl'>
+      <div className='px-4 mx-auto max-w-7xl'>
 
         <img src="https://ibb.co.com/LdLX2bdV" alt="" />
 
@@ -161,7 +161,7 @@ function App() {
 
         {/* daisy navbar */}
         <div class="navbar flex justify-between bg-base-100 shadow-sm">
-          <div class="inline-flex items-center w-40%">
+          <div class="inline-flex items-center ">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -200,7 +200,7 @@ function App() {
 
 
         {/* hero section start */}
-        <div className='text-center mx-4 md:mx-0 space-y-5 mt-6 bg-black bgImage rounded-3xl h-[545px] content-center'>
+        <div className='text-center  space-y-5 mt-6 bg-black bgImage rounded-3xl h-[545px] content-center'>
           <img className='flex mx-auto' src={bannerMain} alt="" />
           <h1 className='text-5xl text-white sm:px-4'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
           <p className='text-white'>Beyond Boundaries Beyond Limits</p>
@@ -220,7 +220,7 @@ function App() {
 
         <div className='flex justify-between mt-7 items-center'>
           <div id='players-count' className='font-bold'>Available Players</div>
-          <div className='w-72 h-14'>
+          <div className='w-60 h-14 '>
             <button onClick={handleShowPlayerBtn} id='available-btn' className='w-1/2 h-full bg-[#E7FE29] rounded-l-xl font-bold border border-gray-200'>Available</button>
             <button id='selected-btn' onClick={handleHiddenPlayer} className='w-1/2 h-full  rounded-r-2xl border border-gray-200'>Selected (<span>{selectedPlayer.length}</span>) </button>
           </div>
