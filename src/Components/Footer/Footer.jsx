@@ -16,7 +16,7 @@ const Footer = () => {
 
                 <div className='flex gap-3 items-center justify-center'>
                 <input type="text" placeholder="Enter Your Email" class="input input-lg" />
-                <button class="btn btn-active btn-success">Success</button>
+                <button class="btn bg-linear-to-r from-yellow-200 from-0% to-purple-500  to-100% ">Subscribe</button>
                 </div>
 
 
@@ -37,7 +37,7 @@ const Footer = () => {
                             <div>
                                 <h1 className='font-bold mb-3'>Quick Links</h1>
 
-                                <ul className='space-y-2 list-disc ml-8'>
+                                <ul className='space-y-2 list-[square] ml-8'>
                                     <li>Home</li>
                                     <li >Services</li>
                                     <li>About</li>
@@ -56,7 +56,7 @@ const Footer = () => {
                                     type="text"
                                     placeholder="username@site.com"
                                     class="input input-bordered join-item" />
-                                <button class="btn btn-primary join-item">Subscribe</button>
+                                <button class="btn text-black btn-primary bg-linear-to-r from-yellow-200 from-0% to-purple-500 to-100% join-item">Subscribe</button>
                             </div>
                         </fieldset>
                     </div>
