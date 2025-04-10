@@ -47,6 +47,12 @@ function App() {
 
   }
 
+  const handleFreeCredit =()=>{
+    handleCredit()
+    successToast() 
+  }
+
+
   const clickToAddPlayer=(p)=>{
 
     const isExist=selectedPlayer.find(item=> item.playerId == p.playerId)
@@ -58,19 +64,29 @@ function App() {
 
    if(p.biddingPrice>=credit){
         toast.error('your credit is low')
+        
 
     }
-    else if(isExist){
+    else{
+      
+    if    (isExist){
       toast.error('player already exists')
     }
     else if(selectedPlayer.length>=6){
       toast.error('players exceids 6')
     }
     else{
+      toast.success('added successfull')
       const newPlayer2=[...selectedPlayer, p]
           setSelectedPlayer(newPlayer2) 
           setCredit(credit-p.biddingPrice)
+
+          
+          console.log('selected players', selectedPlayer);
+          
     }
+  }
+
     
     
   //   if(p.biddingPrice<=credit&& !isExist && selectedPlayer.length<6){
@@ -115,7 +131,7 @@ function App() {
 
   return (
     <>
-      <div className='max-w-6xl mx-auto'>
+      <div className='md:w-7xl md:px-8  mx-auto'>
 
         <img src="https://ibb.co.com/LdLX2bdV" alt="" />
 
@@ -143,9 +159,9 @@ function App() {
 
           <div className='content-center mx-auto border-[#E7FE29] border  w-[225px] h-16 rounded-3xl'>
 
-            <button onClick={()=>{handleCredit(); successToast() }} className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold btn '>Claim Free Credit</button>
+            <button onClick={()=>handleFreeCredit()} className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold btn '>Claim Free Credit</button>
 
-            <ToastContainer />
+           
           </div>
         </div>
         {/* hero section end */}
@@ -177,7 +193,7 @@ function App() {
   <Newsletter></Newsletter>
   <Footer></Footer>
       
-
+  <ToastContainer />
     </>
   )
 }
