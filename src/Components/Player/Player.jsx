@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFlag} from 'react-icons/fa';
 import { GrFlagFill } from 'react-icons/gr';
 import { IoMdPerson } from 'react-icons/io';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Player = ({playerInside, clickToAddPlayer}) => {
     // console.log(playerInside);
@@ -40,6 +41,19 @@ const Player = ({playerInside, clickToAddPlayer}) => {
                 <div className='font-bold'>Price: ${biddingPrice}</div>
                 <div>
                     <button id='${playerId}' onClick={()=>clickToAddPlayer(playerInside)}className='btn hover:bg-blue-500 '>Choose Player</button>
+                    <ToastContainer
+position="top-center"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
+
                 </div>
             </div>
    

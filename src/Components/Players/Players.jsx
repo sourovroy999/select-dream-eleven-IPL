@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Player from '../Player/Player';
 
+
 const Players = ({clickToAddPlayer }) => {
     const[players, setPlayers]= useState([])
 

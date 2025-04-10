@@ -1,9 +1,14 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+const deleteToast =()=>toast.success('player deleted')
 
-const SingleChoosePlayer = ({selectedPlayer,handleDelete}) => {
-    const{image,name, role, playerId}=selectedPlayer;
+
+
+const SingleChoosePlayer = ({ selectedPlayer, handleDelete }) => {
+    const { image, name, role, playerId } = selectedPlayer;
     console.log(name);
-    
+
+
     return (
         <div>
             <div className='flex justify-between border border-gray-300 rounded-md  p-3 '>
@@ -14,8 +19,21 @@ const SingleChoosePlayer = ({selectedPlayer,handleDelete}) => {
                         <p className='text-gray-400'>{role}</p>
                     </div>
                 </div>
-                <button onClick={()=>handleDelete(playerId)}><img className='h-10' src="https://img.icons8.com/?size=100&id=119057&format=png&color=000000" alt="" /></button>
+                <button onClick={() => {handleDelete(playerId);toast.success('remove succcessfullly')}}><img className='h-10' src="https://img.icons8.com/?size=100&id=119057&format=png&color=000000" alt="" /></button>
+               
             </div>
+            <ToastContainer
+                    position="top-right"
+                    autoClose={3000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick={false}
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light"
+                />
         </div>
     );
 };

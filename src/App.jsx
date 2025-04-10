@@ -7,6 +7,12 @@ import bannerMain from './assets/banner-main.png'
 import Players from './Components/Players/Players'
 import ChoosePlayer from './Components/ChoosePlayer/ChoosePlayer'
 
+import { ToastContainer, toast } from 'react-toastify';
+
+const notify = () => toast('Wow so easy !');
+
+const successToast=()=>toast.success('sucessfully credit added')
+
 
 
 function App() {
@@ -17,8 +23,9 @@ function App() {
   const[selectedPlayer, setSelectedPlayer]=useState([])
 
   function handleCredit (){
-    const newCredit=credit+450000;
+    const newCredit=credit+4500000;
     setCredit(newCredit)
+
     
     
   }
@@ -46,50 +53,46 @@ function App() {
     console.log(p.playerId);
     
 
+    
 
-  //  if(!isExist ){
-  //     const newPlayer=[...selectedPlayer, p]
-  //     setSelectedPlayer(newPlayer)  
-  //   }
+   if(p.biddingPrice>=credit){
+        toast.error('your credit is low')
 
-  //       else {
-  //       alert('already selected')
-
-  //       }
-
-  
-
-  //  if( p.biddingPrice<credit ){
+    }
+    else if(isExist){
+      toast.error('player already exists')
+    }
+    else if(selectedPlayer.length>=6){
+      toast.error('players exceids 6')
+    }
+    else{
+      const newPlayer2=[...selectedPlayer, p]
+          setSelectedPlayer(newPlayer2) 
+          setCredit(credit-p.biddingPrice)
+    }
+    
+    
+  //   if(p.biddingPrice<=credit&& !isExist && selectedPlayer.length<6){
   //     const newPlayer2=[...selectedPlayer, p]
   //     setSelectedPlayer(newPlayer2) 
-      
-  //     // const newCredit=setCredit-p.biddingPrice;
   //     setCredit(credit-p.biddingPrice)
-  //   }
-
-  //       else {
-  //       alert('you dont have money')
-
-  //       }
-   if( selectedPlayer.length<6 ){
-      const newPlayer2=[...selectedPlayer, p]
-      setSelectedPlayer(newPlayer2) 
+  // }
+     
+  //   else{
+  //     console.log('hello');
       
-    }
 
-        else {
-        alert('players exceeds six')
-
-        }
-        
-   
-        
+  //   }
     
+    
+
+    
+ 
+    
+
+   
   }
 
-  const checkBalance=()=>{
-
-  }
 
 
 
@@ -139,7 +142,9 @@ function App() {
 
           <div className='content-center mx-auto border-[#E7FE29] border  w-[225px] h-16 rounded-3xl'>
 
-            <button onClick={handleCredit}  className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold btn '>Claim Free Credit</button>
+            <button onClick={()=>{handleCredit(); successToast() }} className=' w-[200px] h-12 rounded-2xl bg-[#E7FE29] font-bold btn '>Claim Free Credit</button>
+
+            <ToastContainer />
           </div>
         </div>
         {/* hero section end */}
