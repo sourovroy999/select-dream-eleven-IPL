@@ -200,9 +200,9 @@ function App() {
 
 
         {/* hero section start */}
-        <div className='text-center space-y-5 mt-6 bg-black bgImage rounded-3xl h-[545px] content-center'>
+        <div className='text-center mx-4 md:mx-0 space-y-5 mt-6 bg-black bgImage rounded-3xl h-[545px] content-center'>
           <img className='flex mx-auto' src={bannerMain} alt="" />
-          <h1 className='text-5xl text-white'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
+          <h1 className='text-5xl text-white sm:px-4'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
           <p className='text-white'>Beyond Boundaries Beyond Limits</p>
 
 
