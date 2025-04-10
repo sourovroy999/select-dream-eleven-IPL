@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <>
 
-            <div className='bg-black text-white sm:h-screen md:h-[790px] mt-50 pt-36 max-w-[1440px] mx-auto   md:px-6 md:w-7xl'>
+            <div className='bg-black text-white  md:h-[790px] mt-50 pt-36  mx-auto   md:px-6 '>
 
-                <div className='border rounded-2xl text-black md:w-4xl border-gray-200 outline outline-gray-300 outline-offset-[20px]  bg-white bgImage h-60 mx-auto content-center text-center -mt-64 space-y-4 z-20 '>
+                <div className='border rounded-2xl text-black border-gray-200 outline outline-gray-300 outline-offset-[20px]  bg-white bgImage h-60 mx-auto content-center text-center -mt-64 space-y-4 z-20 '>
 
                     <h1 className='font-bold text-4xl'>Subscribe to our Newsletter</h1>
                     <p>Get the latest updates and news right in your inbox</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className='mt-32'>
+                <div className=''>
                     <img className='mx-auto' src={logoFooter} alt="" />
                     <div className='flex flex-col justify-between max-w-6xl mx-auto my-10  z-10'>
                         <div className='w-1/3'>
