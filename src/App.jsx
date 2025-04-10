@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import logo from './assets/logo.png'
-import logoFooter from './assets/logo-footer.png'
+
 import bgShadow from './assets/bg-shadow.png'
 import bannerMain from './assets/banner-main.png'
 import Players from './Components/Players/Players'
 import ChoosePlayer from './Components/ChoosePlayer/ChoosePlayer'
 
 import { ToastContainer, toast } from 'react-toastify';
+import Footer from './Components/Footer/Footer'
 
 const notify = () => toast('Wow so easy !');
 
@@ -166,7 +167,7 @@ function App() {
     {
       show?  <Players clickToAddPlayer={clickToAddPlayer}></Players> : <ChoosePlayer handleDelete={handleDelete} selectedPlayer={selectedPlayer}></ChoosePlayer>
     }
-       
+
 
         
 
@@ -174,6 +175,8 @@ function App() {
       </div >
 
 
+  <Footer></Footer>
+      
 
     </>
   )
