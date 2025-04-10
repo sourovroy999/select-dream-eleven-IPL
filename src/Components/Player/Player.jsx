@@ -13,7 +13,7 @@ const Player = ({ playerInside, clickToAddPlayer }) => {
 
 
     return (
-        <div className='border border-gray-300 sm:w-[300px] md:w-full mx-auto  p-5 rounded-2xl'>
+        <div className='border border-gray-300 sm:w-[300px] md:w-[370px] lg:w-full mx-auto  p-5 rounded-2xl'>
             <img className='w-[340px] h-[220px] object-cover rounded-2xl transition duration-300 ease-out hover:scale-102' src={image} alt="" />
             <div className='flex items-center gap-2 mt-3'>
                 <IoMdPerson></IoMdPerson>
