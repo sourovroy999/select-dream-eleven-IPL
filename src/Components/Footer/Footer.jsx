@@ -1,16 +1,22 @@
 import React from 'react';
 import logoFooter from '/milestone-seven/my-dream-eleven/src/assets/logo-footer.png'
+import bgShadow from '/milestone-seven/my-dream-eleven/src/assets/bg-shadow.png'
+
 
 const Footer = () => {
     return (
         <>
-            <div className='bg-black text-white h-[790px] mt-40 max-w-7xl'>
+
+            <div className='bg-black text-white h-[790px] mt-50 pt-36  max-w-screen mx-auto relative'>
+
+            <div className='border rounded-2xl border-gray-200 w-5xl bg-white bgImage h-60 mx-auto  -mt-64 z-20'>
+
+</div>
 
 
-
-               <div className='mt-14'>
+               <div className='mt-32'>
                <img className='mx-auto' src={logoFooter} alt="" />
-                <div className='flex justify-between max-w-6xl mx-auto my-10'>
+                <div className='flex justify-between max-w-6xl mx-auto my-10 relative z-10'>
                     <div className='w-1/3'>
                         <div className='w-2/3'>
                             <h1 className='font-bold'>About Us</h1>

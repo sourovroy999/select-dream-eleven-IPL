@@ -2,13 +2,13 @@ import { useState } from 'react'
 import './App.css'
 import logo from './assets/logo.png'
 
-import bgShadow from './assets/bg-shadow.png'
 import bannerMain from './assets/banner-main.png'
 import Players from './Components/Players/Players'
 import ChoosePlayer from './Components/ChoosePlayer/ChoosePlayer'
 
 import { ToastContainer, toast } from 'react-toastify';
 import Footer from './Components/Footer/Footer'
+import Newsletter from './Components/Footer/Newsletter'
 
 const notify = () => toast('Wow so easy !');
 
@@ -174,7 +174,7 @@ function App() {
 
       </div >
 
-
+  <Newsletter></Newsletter>
   <Footer></Footer>
       
 
