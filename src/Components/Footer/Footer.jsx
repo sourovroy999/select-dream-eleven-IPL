@@ -9,7 +9,16 @@ const Footer = () => {
 
             <div className='bg-black text-white h-[790px] mt-50 pt-36  max-w-screen mx-auto relative'>
 
-            <div className='border rounded-2xl border-gray-200 w-5xl bg-white bgImage h-60 mx-auto  -mt-64 z-20'>
+            <div className='border rounded-2xl text-black border-gray-200 outline outline-gray-300 outline-offset-[20px] w-5xl bg-white bgImage h-60 mx-auto content-center text-center -mt-64 space-y-4 z-20'>
+
+                <h1 className='font-bold text-4xl'>Subscribe to our Newsletter</h1>
+                <p>Get the latest updates and news right in your inbox</p>
+
+                <div className='flex gap-3 items-center justify-center'>
+                <input type="text" placeholder="Enter Your Email" class="input input-lg" />
+                <button class="btn btn-active btn-success">Success</button>
+                </div>
+
 
 </div>
 
