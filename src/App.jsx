@@ -27,7 +27,7 @@ function App() {
   const [selectedPlayer, setSelectedPlayer] = useState([])
 
   // const successToast=()=>toast('sucessfully credit added', {autoClose:3000})
-  const successToast = () => alert('successdull')
+  const successToast = () => alert('credit added successfully')
 
   function handleCredit() {
     const newCredit = credit + 4500000;
@@ -163,7 +163,7 @@ function App() {
         <div class="navbar flex justify-between bg-base-100 shadow-sm">
           <div class="inline-flex items-center ">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
               </div>
               <ul
