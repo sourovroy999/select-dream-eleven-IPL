@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <>
 
-            <div className='bg-black text-white  md:h-[790px] mt-50 pt-36  mx-auto   md:px-6 '>
+            <div className='bg-black text-white max-w-[1600px]  md:h-[790px] mt-50 pt-36  mx-auto   md:px-6 '>
 
 
             {/* newsletter area */}
