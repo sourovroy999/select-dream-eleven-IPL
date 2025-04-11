@@ -9,12 +9,14 @@ const Footer = () => {
 
             <div className='bg-black text-white  md:h-[790px] mt-50 pt-36  mx-auto   md:px-6 '>
 
-                <div className='border rounded-2xl text-black border-gray-200 outline outline-gray-300 outline-offset-[20px]  bg-white bgImage h-60 mx-auto content-center text-center -mt-64 space-y-4 z-20 '>
+
+            {/* newsletter area */}
+                <div className='border rounded-2xl mb-3 max-w-4xl text-black border-gray-200 outline outline-gray-300 outline-offset-[10px] md:outline-offset-[16px] px-2 md:px-0  bg-white bgImage py-14 sm:px-8 w-11/12 md:w-5/6 lg:w-4/6 mx-auto content-center text-center -mt-72 space-y-4 z-20 '>
 
                     <h1 className='font-bold text-4xl'>Subscribe to our Newsletter</h1>
                     <p>Get the latest updates and news right in your inbox</p>
 
-                    <div className='flex gap-3 items-center justify-center'>
+                    <div className='flex flex-col px-3 md:px-0 md:flex-row gap-3 items-center justify-center'>
                         <input type="text" placeholder="Enter Your Email" class="input input-lg" />
                         <button class="btn bg-linear-to-r from-purple-500 from-0% to-yellow-200 to-100% ">Subscribe</button>
                     </div>
@@ -23,17 +25,18 @@ const Footer = () => {
                 </div>
 
 
+{/* actual footer area */}
                 <div className=''>
-                    <img className='mx-auto' src={logoFooter} alt="" />
-                    <div className='flex flex-col justify-between max-w-6xl mx-auto my-10  z-10'>
-                        <div className='w-1/3'>
-                            <div className='w-2/3'>
+                    <img className='mx-auto mt-4' src={logoFooter} alt="" />
+                    <div className='flex flex-col px-3 gap-6 md:pl-0 md:flex-row justify-between max-w-6xl mx-auto my-16  z-10'>
+                        <div className='w-full md:w-1/3'>
+                            <div className=''>
                                 <h1 className='font-bold'>About Us</h1>
                                 <p className='mt-3 text-gray-300'>We are a passionate team dedicated to providing the best services to our customers.</p>
                             </div>
                         </div>
-                        <div className='w-1/3'>
-                            <div className='flex flex-col ml-10'>
+                        <div className='w-full md:w-1/3'>
+                            <div className='flex flex-col '>
                                 <div>
                                     <h1 className='font-bold mb-3'>Quick Links</h1>
 
@@ -46,10 +49,10 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-1/3'>
+                        <div className='w-full md:w-1/3'>
                             <h1 className='font-bold '>Subscribe</h1>
                             <p className='text-gray-300 my-3'>Subscribe to our newsletter for the latest updates.</p>
-                            <fieldset class="w-80">
+                            <fieldset class="w-64">
                                 <label>Enter your email address</label>
                                 <div class="join">
                                     <input
